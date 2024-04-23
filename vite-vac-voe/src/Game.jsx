@@ -103,15 +103,21 @@ export default function Game() {
   // consists of a game board and a game history. The board is created using
   // a <Board /> component, and the history is created using an <ordered list>.
   // The contents of the game-history <ol> is retrieved from 'moves'.
+  // Additionally, the title of the Game, Vite-Vac-Voe, is shown at the top.
   // Styles are provided by css/game.module.css
   return (
-    <div className={style["game"]}>
-      <div className={style["game-board"]}>
-        <Board xIsNext={xIsNext} currentState={currentGameState} onPlay={handlePlay} />
+    <>
+      <div className={style["title-container"]}>
+        <p className={style["title-text"]}>Vite-Vac-Voe</p>
       </div>
-      <div className={style["game-history"]}>
-        <ol>{moves}</ol>
+      <div className={style["game"]}>
+        <div className={style["game-board"]}>
+          <Board xIsNext={xIsNext} currentState={currentGameState} onPlay={handlePlay} />
+        </div>
+        <div className={style["game-history"]}>
+          <ol>{moves}</ol>
+        </div>
       </div>
-    </div>
+    </>
   )
 }

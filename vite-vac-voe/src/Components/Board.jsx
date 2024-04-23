@@ -1,8 +1,8 @@
 import style from '../css/game.module.css';
 
 // The Square component represents a clickable cell in the 3x3 Tic-Tac-Toe board
-// the 'value' parameter indicates what will be placed inside the square, which
-// will either be an X, O, or empty square.
+// the 'value' parameter indicates what will be placed inside the square. Each
+// square will either have an X, O, or be empty.
 function Square({ value, onSquareClick }) {
   return (
     <button className={style["square"]} onClick={onSquareClick}>

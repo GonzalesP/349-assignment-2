@@ -1,0 +1,93 @@
+/* make all components a border-box (use true heights and widths */
+* {
+  box-sizing: border-box;
+}
+
+/* place all components in the center of the screen and use sans-serif text
+  also, make the background light-blue */
+body {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  background-color: rgb(200, 229, 255);
+}
+
+/* this style represents each square (or cell in the 3x3 Tic-Tac-Toe board). */
+.square {
+  /* make the square white with a black background */
+  background: #fff;
+  border: 6px solid #000;
+
+  /* place square from left to right, top to bottom */
+  float: left;
+
+  /* make the X's and O's big and bold */
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 34px;
+
+  /* increase the size of the squares */
+  height: 64px;
+  width: 64px;
+
+  /* use negative margin to prevent squares from having double borders
+    between each other (i.e. use | instead of ||) */
+  margin-right: -6px;
+  margin-top: -6px;
+
+  /* place letters in the center and adjust padding */
+  padding: 0;
+  text-align: center;
+}
+
+/* this <div> contains the status message text.
+  this style adds some margin underneath it */
+.status-container {
+  margin-bottom: 8px;
+}
+
+/* make the status message larger and bold */
+.status-message {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* make the game <div> container have a row flex-direction so that
+  the game board (3x3 squares) and the game history (list of moves) can
+  be placed side by side */
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+/* add some distance between the board and the history list */
+.game-history {
+  margin-left: 64px;
+  font-size: 24px;
+}
+
+/* make each history button aquamarine and have larger text. also make the
+  button's border black and rounder */
+.history-item {
+  background-color: aquamarine;
+  font-size: 20px;
+
+  border: 2px solid #000;
+  border-radius: 16px;
+
+  margin-bottom: 16px;
+}
+
+/* this <div> contains the Title (text) of the project. this style will place
+  the Title in the top center of the screen */
+.title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* make the Title's text very large and bold */
+.title-text {
+  font-size: 36px;
+  font-weight: bold;
+}
