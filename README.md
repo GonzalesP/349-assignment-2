@@ -9,3 +9,7 @@ The name of this project is 'Vite-Vac-Voe' (which is supposed to sound like Tic-
 4. Run the command 'npm run dev' to start the Vite app. Once the Vite app starts, a url link will appear (most likely for localhost)
 5. Visit the url link in a browser of your choice.
 6. Enjoy playing Vite-Vac-Voe!
+
+# References
+This project's codebase is largely inspired by the React Tic-Tac-Toe tutorial, which can be found here:
+* https://react.dev/learn/tutorial-tic-tac-toe
